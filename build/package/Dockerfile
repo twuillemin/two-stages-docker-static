@@ -18,7 +18,7 @@ RUN apk add --update-cache git build-base musl musl-dev musl-utils upx \
  && rm -rf /var/cache/apk/*
 
 # Define where the sources are being copied
-WORKDIR /go/src/bitbucket.org/twuillemin/two-stages-docker-static
+WORKDIR /go/src/github.com/twuillemin/two-stages-docker-static
 
 # Copy from the root of the project to destination
 # All needed folders should be copied, that's cleaner than copying everything
@@ -52,7 +52,7 @@ RUN go mod download \
 FROM scratch
 
 # Copy our static executable.
-COPY --from=build-env /go/src/bitbucket.org/twuillemin/two-stages-docker-static/main.exe /go/bin/main.exe
+COPY --from=build-env /go/src/github.com/twuillemin/two-stages-docker-static/main.exe /go/bin/main.exe
 
 # Run the hello binary.
 ENTRYPOINT ["/go/bin/main.exe"]

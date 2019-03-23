@@ -1,4 +1,4 @@
-module bitbucket.org/twuillemin/two-stages-docker-static
+module github.com/twuillemin/two-stages-docker-static
 
 go 1.11
 
