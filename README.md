@@ -1,7 +1,7 @@
 # Small Go Static build for Docker
 This short snippet intends to build a small and statically linked executable to be run in Docker. 
 
-Give me the code: [Dockerfile](https://github.com/twuillemin/two-stages-docker-static/src/master/build/package/Dockerfile)
+Give me the code: [Dockerfile](https://github.com/twuillemin/two-stages-docker-static/blob/master/build/package/Dockerfile)
 
 # What is the issue?
 ## A simple static build
